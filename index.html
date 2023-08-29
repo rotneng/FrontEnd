@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <style>
+        .container {
+            width: 100%;
+            border: 1px solid navy;
+            height: 100vh;
+            /* background-image: linear-gradient(226deg, #E91E63, yellow) ; */
+            background-image: url(images/bg2.jpg);
+            background-position: center;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;  
+            justify-content: center;
+            align-items: center;  
+        }
+
+        * {
+            margin: 0;
+            font-size: 12px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .form-wrapper {
+            width: 45%;
+            /* border: 1px solid red; */
+            min-height: 40px;
+            background-color: rgba(197, 186, 196, 0.562);
+            border-radius: 8px;
+            box-shadow: 4px 5px 18px black;
+            padding: 19px;
+            min-height: 800px;
+        }
+
+        .user-email,  .user-password, .login-btn {
+            display: block;
+            width: 95%;
+            height: 50px;
+            margin: 9px;
+            border-radius: 9px;
+        }
+
+        .user-email, .user-password {
+            background-color: transparent;
+            border: 3px solid #591a1c;
+            color: #d8ba98;
+            font-size: 16px
+        }
+
+        .login-btn {
+            background-color: red;
+            color: white;
+            font-weight: bolder;
+            font-size: 20px;
+            padding: 33px;
+            vertical-align: middle;
+            transition: 500ms ease-in;
+            cursor: pointer;
+        }
+
+        .login-btn:hover {
+            background-color: black;
+            color: red;
+        }
+
+        h1 {
+            font-size: 24px;        
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- This is the main container of our Website -->
+        <div class="form-wrapper">
+            <h1>Welcome Guest <br>Login</h1>
+           <form action="">
+            <input class="user-email" type="text" name="email" placeholder="Type Email">
+            <input class="user-password" type="password" name="password" placeholder="Type password">
+            <input class="login-btn" type="submit" value="Login">
+           </form>
+        </div>
+        <div class="footer"></div>
+    </div>
+</body>
+</html>
